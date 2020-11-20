@@ -1,24 +1,19 @@
 # todo-list
+Who do you have on you ToDo list today? 🤔
 
-## Project setup
-```
-npm install
-```
+Project was kicked off with vue-cli so all standard vue-cli commands apply.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Notes
+We've installed Tailwind under compatibility mode because when this project was spun up, Vue CLI didn't have PostCSS8 yet. So we've installed it in compatiblity mode!
 
-### Compiles and minifies for production
-```
-npm run build
+Essentially we did this:
+```console
+npm uninstall tailwindcss postcss autoprefixer
+npm install tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 ```
 
-### Lints and fixes files
+Later on, once Vue CLI gets upgraded with PostCSS8 we'll need to do this:
+```console
+npm uninstall tailwindcss @tailwindcss/postcss7-compat
+npm install tailwindcss@latest postcss@latest autoprefixer@latest
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
