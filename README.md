@@ -4,7 +4,7 @@ Who do you have on you ToDo list today? 🤔
 Project was kicked off with vue-cli so all standard vue-cli commands apply.
 
 ## Notes
-We've installed Tailwind under compatibility mode because when this project was spun up, Vue CLI didn't have PostCSS8 yet. So we've installed it in compatiblity mode!
+We've installed Tailwind under compatibility mode because when this project was spun up, Vue CLI didn't have PostCSS8 yet.
 
 Essentially we did this:
 ```console
